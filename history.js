@@ -1,14 +1,13 @@
 const histories = document.getElementById("histories");
 
 function addHistory(questionText, roundTimeTaken, errorCount) {
-  console.log(questionText, roundTimeTaken, errorCount)
   const newRow = document.createElement("div");
   newRow.classList.add("card");
 
   newRow.innerHTML = `
   <h3>${questionText}</h3>
   <div>
-  <p>You took: <span class="bold">${console.log(roundTimeTaken)}</span> seconds</p>
+  <p>You took: <span class="bold">${roundTimeTaken}</span> seconds</p>
   <p>You made <span class="bold red">${errorCount}</span> mistakes</p>
   </div>
   `;
@@ -28,14 +27,17 @@ function displayHistory() {
 
   previousTests.forEach((test) => {
     const newRow = document.createElement("div");
-    newRow.classList.add("card");
+    newRow.classList.add("col");
 
     newRow.innerHTML = `
-  <h3>${test.questionText}</h3>
-  <p>You took: <span class="bold">${test.roundTimeTaken}</span> seconds</p>
-    <p>You made <span class="bold red">${test.errorCount}</span> mistakes</p>
+    <div class="card">
+    <h3 class="mb-3">${test.questionText}</h3>
+    <p class="mb-3">You took: <span class="bold">${test.roundTimeTaken}</span> seconds</p>
+      <p class="mb-3">You made <span class="bold red">${test.errorCount}</span> mistakes</p>
+  </div>
   `;
 
     histories.appendChild(newRow);
   });
 }
+

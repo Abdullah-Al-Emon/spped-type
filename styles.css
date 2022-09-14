@@ -65,7 +65,7 @@ body {
   position: fixed;
   top: 10%; 
   left: 10%;
-  transform: translate(-50%, -50%);
+  transform: translate(70%, 10%);
   height: 250px;
   width: 400px;
   background-color: #171717;
@@ -154,6 +154,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   padding: 20px 30px;
   color: white;
   border-radius: 15px;
@@ -162,7 +163,7 @@ button {
     92.49deg,
     rgba(255, 255, 255, 0.1) 0.18%,
     rgba(255, 255, 255, 0.05) 99.85%
-  );
+  )!important;
   backdrop-filter: blur(5px);
   margin-bottom: 30px;
 }
