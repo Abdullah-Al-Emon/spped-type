@@ -134,7 +134,6 @@ displayHistory();
 setInterval(() => {
   const currentTime = new Date().getTime();
   const timeSpent = (currentTime - startTime) / 1000;
-  // console.log(timeSpent);
   const roundTimeSpent = parseInt(timeSpent)
 
 
