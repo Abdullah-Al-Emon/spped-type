@@ -40,20 +40,20 @@
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body text-muted">
                                     <strong>Local Storage</strong> <br>
-                                    The storage capacity of local storage is 5MB/10MB. 
-                                    As it is not session-based, it must be deleted via javascript or manually. 
-                                    The client  can only read local storage. 
+                                    The storage capacity of local storage is 5MB/10MB.
+                                    As it is not session-based, it must be deleted via javascript or manually.
+                                    The client can only read local storage.
                                     There is no transfer of data to the server.
                                     There are fewer old browsers that support it.
                                     <br>
 
                                     <strong>Session Storage</strong> <br>
                                     The storage capacity of session storage is 5MB.
-                                    It’s session-based and works per window or tab. 
-                                    This means that data is stored only for the duration of a session, i.e., 
-                                    until the browser (or tab) is closed. 
+                                    It’s session-based and works per window or tab.
+                                    This means that data is stored only for the duration of a session, i.e.,
+                                    until the browser (or tab) is closed.
                                     The client can only read local storage.
-                                    There is no transfer of data to the server. 
+                                    There is no transfer of data to the server.
                                     There are fewer old browsers that support it.
                                     <br>
                                 </div>
@@ -71,18 +71,26 @@
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body text-muted">
                                     <strong>The Global scope</strong> <br>
-                                    A variable exists inside or outside a block. If a variable is declared outside all functions or curly braces 
-                                    ({}), it exists in the global scope. The global variables can be accessed by any line of code in the program, 
+                                    A variable exists inside or outside a block. If a variable is declared outside all
+                                    functions or curly braces
+                                    ({}), it exists in the global scope. The global variables can be accessed by any
+                                    line of code in the program,
                                     including inside blocks.
                                     <br>
 
                                     <strong>The Block scope</strong> <br>
-                                    So far, we’ve seen variables defined with the var keyword. Var can declare a variable either in 
-                                    the global or local scope. The variables that are declared within the block scope are comparable 
-                                    to local ones. They are available within the block that they are defined. The main difference between 
-                                    the local scope and block scope is that the block statements (e.g. if conditions or for loops), don't 
-                                    create a new scope. So the var keyword will not have an effect, because the variables are still in the same 
-                                    scope. ES6 introduced block scope by using the let and const keywords. These two keywords are scoped 
+                                    So far, we’ve seen variables defined with the var keyword. Var can declare a
+                                    variable either in
+                                    the global or local scope. The variables that are declared within the block scope
+                                    are comparable
+                                    to local ones. They are available within the block that they are defined. The main
+                                    difference between
+                                    the local scope and block scope is that the block statements (e.g. if conditions or
+                                    for loops), don't
+                                    create a new scope. So the var keyword will not have an effect, because the
+                                    variables are still in the same
+                                    scope. ES6 introduced block scope by using the let and const keywords. These two
+                                    keywords are scoped
                                     within the block which are defined.
                                     <br>
                                 </div>
@@ -99,8 +107,10 @@
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body text-muted">
-                                    The event loop is a mechanism that allows JavaScript to perform non-blocking operations. 
-                                    When an asynchronous task is started, the event loop will start running. Once the task is completed, 
+                                    The event loop is a mechanism that allows JavaScript to perform non-blocking
+                                    operations.
+                                    When an asynchronous task is started, the event loop will start running. Once the
+                                    task is completed,
                                     the event loop will again check for any other tasks that need to be performed.
                                 </div>
                             </div>
@@ -110,17 +120,21 @@
                                 <button class="accordion-button collapsed text-capitalize fw-bold" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
                                     aria-controls="collapseFour">
-                                    why you use template string in javascript
+                                    In how many ways can we get undefined?
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body text-muted">
-                                    Template strings are a powerful feature of modern JavaScript released in ES6. It
-                                    lets us insert/interpolate variables and expressions into strings without needing to
-                                    concatenate like in older versions of JavaScript. It allows us to create strings
-                                    that are complex and contain dynamic elements.
-                                    </strong>
+                                    <strong>8 ways to get undefined</strong> <br>
+                                    1. variable that is not initialized will give undefined. <br>
+                                    2. function with no return. <br>
+                                    3. parameter that is not passed will be undefined. <br>
+                                    4. if return has nothing on the right side will return undefined. <br>
+                                    5. property that doesn't exist on an object will give you undefined. <br>
+                                    6. accessing array elements outside of the index range. <br>
+                                    7. deleting an element inside an array. <br>
+                                    8. set value directly to undefined. <br>
                                 </div>
                             </div>
                         </div>

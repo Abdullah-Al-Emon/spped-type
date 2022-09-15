@@ -31,11 +31,11 @@ function displayHistory() {
 
     newRow.innerHTML = `
     <div class="card">
-    <h3 class="mb-3">${test.questionText}</h3>
-    <p class="mb-3">You took: <span class="bold">${test.roundTimeTaken}</span> seconds</p>
-      <p class="mb-3">You made <span class="bold red">${test.errorCount}</span> mistakes</p>
-  </div>
-  `;
+      <h3 class="mb-3">${test.questionText}</h3>
+      <p class="mb-2">You took: <span class="bold">${test.roundTimeTaken}</span> seconds</p>
+      <p class="mb-2">You made <span class="bold red">${test.errorCount}</span> mistakes</p>
+    </div>
+    `;
 
     histories.appendChild(newRow);
   });
