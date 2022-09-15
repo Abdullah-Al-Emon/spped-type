@@ -204,8 +204,11 @@ button {
     padding-right: 1rem;
     height: 280px
   }
-
+  button{
+    width: 200px;
+  }
   #result {
+    width: 300px;
     transform: translate(-5%, 10%)
   }
 }
